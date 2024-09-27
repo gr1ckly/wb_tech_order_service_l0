@@ -1,0 +1,18 @@
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data @model.json \
+  "http://HOST:PORT/add"
+
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{
+            "id": 7,
+            "name": "John Doe",
+            "active": true,
+            "email": "johndoe@example.com"
+          }' \
+  "http://HOST:PORT/add"
+
+curl "http://HOST:PORT/get"
+
+curl "http://HOST:PORT/nothing"
